@@ -1,0 +1,51 @@
+/*------------------------------------------------------
+
+Enterprise GenAI RAG Quality Assessment Framework
+
+Version 1.0
+
+-------------------------------------------------------*/
+
+:root{
+
+    --primary:#1E3A8A;
+
+    --secondary:#2563EB;
+
+    --success:#10B981;
+
+    --background:#F8FAFC;
+
+    --card:#FFFFFF;
+
+    --text:#1F2937;
+
+    --border:#E5E7EB;
+
+}
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+body{
+
+    background:var(--background);
+
+    color:var(--text);
+
+    font-family:'Inter',sans-serif;
+
+}
+
+h1,h2,h3,h4,h5{
+
+    font-family:'Poppins',sans-serif;
+
+}
