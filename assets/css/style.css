@@ -491,3 +491,87 @@ Project Overview
     line-height:1.8;
 
 }
+
+/*=========================================================
+Framework Architecture
+=========================================================*/
+
+.architecture-section{
+
+    padding:110px 0;
+
+    background:#FFFFFF;
+
+}
+
+.architecture-layer{
+
+    background:white;
+
+    border-left:6px solid var(--primary-color);
+
+    border-radius:18px;
+
+    padding:28px 32px;
+
+    margin-bottom:28px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+
+    transition:.35s;
+
+}
+
+.architecture-layer:hover{
+
+    transform:translateX(10px);
+
+    box-shadow:0 18px 45px rgba(0,0,0,.10);
+
+}
+
+.layer-title{
+
+    font-size:24px;
+
+    font-weight:700;
+
+    color:var(--primary-color);
+
+    margin-bottom:12px;
+
+}
+
+.layer-title i{
+
+    margin-right:12px;
+
+}
+
+.layer-content{
+
+    font-size:18px;
+
+    color:#374151;
+
+    margin-bottom:15px;
+
+}
+
+.layer-tech{
+
+    display:inline-block;
+
+    padding:8px 18px;
+
+    border-radius:30px;
+
+    background:#EEF4FF;
+
+    color:var(--primary-color);
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
