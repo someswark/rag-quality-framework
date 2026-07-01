@@ -362,3 +362,132 @@ Pipeline Card
     margin:8px 0;
 
 }
+
+
+/*=========================================================
+Project Overview
+=========================================================*/
+
+.overview-section{
+
+    padding:110px 0;
+
+    background:#F8FAFC;
+
+}
+
+.section-header{
+
+    margin-bottom:70px;
+
+}
+
+.section-badge{
+
+    display:inline-block;
+
+    padding:8px 18px;
+
+    border-radius:30px;
+
+    background:#EEF4FF;
+
+    color:var(--primary-color);
+
+    font-size:13px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+}
+
+.section-title{
+
+    font-size:42px;
+
+    font-weight:700;
+
+    color:var(--primary-color);
+
+    margin-top:22px;
+
+}
+
+.section-description{
+
+    font-size:19px;
+
+    color:#6B7280;
+
+    max-width:760px;
+
+    margin:20px auto 0;
+
+    line-height:1.8;
+
+}
+
+.overview-card{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:40px;
+
+    height:100%;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.05);
+
+    transition:.35s;
+
+}
+
+.overview-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 18px 40px rgba(0,0,0,.12);
+
+}
+
+.card-icon{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:18px;
+
+    background:#EEF4FF;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:32px;
+
+    color:var(--primary-color);
+
+    margin-bottom:25px;
+
+}
+
+.overview-card h4{
+
+    color:var(--primary-color);
+
+    margin-bottom:18px;
+
+}
+
+.overview-card p{
+
+    color:#6B7280;
+
+    line-height:1.8;
+
+}
