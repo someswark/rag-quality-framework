@@ -250,3 +250,115 @@ Hero Section
     color:var(--primary-color);
 
 }
+
+/*=========================================================
+Hero Buttons
+=========================================================*/
+
+.hero-buttons{
+
+    margin-top:45px;
+
+}
+
+.btn-primary-custom{
+
+    background:var(--primary-color);
+
+    color:white;
+
+    padding:14px 28px;
+
+    border-radius:10px;
+
+    font-weight:600;
+
+    margin-right:15px;
+
+}
+
+.btn-primary-custom:hover{
+
+    background:var(--secondary-color);
+
+    color:white;
+
+}
+
+.btn-outline-custom{
+
+    border:2px solid var(--primary-color);
+
+    color:var(--primary-color);
+
+    padding:14px 28px;
+
+    border-radius:10px;
+
+    font-weight:600;
+
+    margin-right:15px;
+
+}
+
+.btn-outline-custom:hover{
+
+    background:var(--primary-color);
+
+    color:white;
+
+}
+
+/*=========================================================
+Pipeline Card
+=========================================================*/
+
+.pipeline-card{
+
+    background:white;
+
+    border-radius:24px;
+
+    padding:40px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.pipeline-card h3{
+
+    color:var(--primary-color);
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+}
+
+.pipeline-step{
+
+    background:#F8FAFC;
+
+    border-left:5px solid var(--secondary-color);
+
+    border-radius:10px;
+
+    padding:15px 20px;
+
+    margin:10px 0;
+
+    font-weight:600;
+
+}
+
+.pipeline-arrow{
+
+    text-align:center;
+
+    font-size:28px;
+
+    color:var(--secondary-color);
+
+    margin:8px 0;
+
+}
