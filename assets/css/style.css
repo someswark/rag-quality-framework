@@ -575,3 +575,119 @@ Framework Architecture
     font-weight:600;
 
 }
+
+
+
+/*=========================================================
+Technology Ecosystem
+=========================================================*/
+
+.technology-section{
+
+    padding:110px 0;
+
+    background:#F8FAFC;
+
+}
+
+.stat-card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.05);
+
+}
+
+.stat-card h3{
+
+    color:var(--primary-color);
+
+    font-size:42px;
+
+    font-weight:700;
+
+}
+
+.stat-card p{
+
+    margin-top:10px;
+
+    color:#6B7280;
+
+}
+
+.tech-card{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:35px;
+
+    height:100%;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.05);
+
+    transition:.3s;
+
+}
+
+.tech-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.10);
+
+}
+
+.tech-card h4{
+
+    color:var(--primary-color);
+
+    margin-bottom:18px;
+
+}
+
+.tech-card i{
+
+    margin-right:12px;
+
+}
+
+.tech-purpose{
+
+    color:#6B7280;
+
+    margin-bottom:20px;
+
+}
+
+.tech-badges{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+}
+
+.tech-badges span{
+
+    background:#EEF4FF;
+
+    color:var(--primary-color);
+
+    padding:8px 16px;
+
+    border-radius:30px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
