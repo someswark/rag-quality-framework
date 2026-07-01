@@ -1,26 +1,12 @@
-/*------------------------------------------------------
-
-Enterprise GenAI RAG Quality Assessment Framework
-
-Version 1.0
-
--------------------------------------------------------*/
-
 :root{
 
     --primary:#1E3A8A;
 
     --secondary:#2563EB;
 
-    --success:#10B981;
-
     --background:#F8FAFC;
 
-    --card:#FFFFFF;
-
     --text:#1F2937;
-
-    --border:#E5E7EB;
 
 }
 
@@ -34,11 +20,15 @@ Version 1.0
 
 }
 
+html{
+
+    scroll-behavior:smooth;
+
+}
+
 body{
 
     background:var(--background);
-
-    color:var(--text);
 
     font-family:'Inter',sans-serif;
 
@@ -47,5 +37,81 @@ body{
 h1,h2,h3,h4,h5{
 
     font-family:'Poppins',sans-serif;
+
+}
+
+.custom-navbar{
+
+    background:#ffffff;
+
+    box-shadow:0 3px 18px rgba(0,0,0,.05);
+
+    padding:14px 0;
+
+}
+
+.logo-circle{
+
+    width:52px;
+
+    height:52px;
+
+    border-radius:50%;
+
+    background:linear-gradient(135deg,#1E3A8A,#2563EB);
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-weight:700;
+
+    font-size:18px;
+
+}
+
+.logo-title{
+
+    font-size:17px;
+
+    font-weight:700;
+
+    color:#1E3A8A;
+
+    font-family:'Poppins',sans-serif;
+
+}
+
+.logo-subtitle{
+
+    font-size:12px;
+
+    color:#666;
+
+}
+
+.nav-link{
+
+    margin-left:20px;
+
+    font-weight:500;
+
+    color:#444 !important;
+
+}
+
+.nav-link:hover{
+
+    color:#2563EB !important;
+
+}
+
+.nav-link.active{
+
+    color:#1E3A8A !important;
 
 }
