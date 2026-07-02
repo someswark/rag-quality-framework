@@ -442,3 +442,304 @@ Enterprise AI Evaluation Workflow
     color:var(--primary);
 
 }
+
+
+/*
+====================================================
+Why Enterprise AI Quality Matters
+====================================================
+*/
+
+.why-quality-section{
+
+    padding:100px 0;
+
+    background:#ffffff;
+
+}
+
+.feature-card{
+
+    background:#ffffff;
+
+    border-radius:20px;
+
+    padding:35px 25px;
+
+    height:100%;
+
+    text-align:center;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+
+    transition:all .3s ease;
+
+}
+
+.feature-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 40px rgba(37,99,235,.12);
+
+}
+
+.feature-icon{
+
+    width:72px;
+
+    height:72px;
+
+    margin:0 auto 20px;
+
+    border-radius:50%;
+
+    background:#EFF6FF;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.feature-icon i{
+
+    font-size:34px;
+
+    color:var(--primary);
+
+}
+
+.feature-card h4{
+
+    margin-bottom:18px;
+
+    font-weight:600;
+
+}
+
+.feature-card p{
+
+    color:#6B7280;
+
+    line-height:1.7;
+
+    margin-bottom:0;
+
+}
+
+
+/*
+====================================================
+Smooth Navigation
+====================================================
+*/
+
+section{
+
+    scroll-margin-top:90px;
+
+}
+
+
+/*
+====================================================
+Common Section Styles
+====================================================
+*/
+
+.section-header{
+
+    max-width:850px;
+
+    margin:0 auto 70px;
+
+}
+
+.section-badge{
+
+    display:inline-block;
+
+    padding:8px 18px;
+
+    background:#DBEAFE;
+
+    color:var(--primary);
+
+    border-radius:30px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    margin-bottom:20px;
+
+}
+
+.section-title{
+
+    font-size:42px;
+
+    font-weight:700;
+
+    color:var(--text);
+
+    margin-bottom:20px;
+
+}
+
+.section-description{
+
+    font-size:18px;
+
+    color:#6B7280;
+
+    line-height:1.8;
+
+}
+
+
+/*
+====================================================
+Executive Dashboard
+====================================================
+*/
+
+.dashboard-section{
+
+    padding:100px 0;
+
+    background:#F8FAFC;
+
+}
+
+.dashboard-card{
+
+    background:#ffffff;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+
+    height:100%;
+
+    transition:.3s;
+
+}
+
+.dashboard-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 18px 40px rgba(37,99,235,.12);
+
+}
+
+.dashboard-card h4{
+
+    font-weight:600;
+
+    margin-bottom:25px;
+
+}
+
+.dashboard-table td{
+
+    padding:14px 0;
+
+    border:none;
+
+}
+
+.dashboard-table td:first-child{
+
+    color:#6B7280;
+
+}
+
+.quality-score{
+
+    font-size:72px;
+
+    font-weight:700;
+
+    color:var(--primary);
+
+    margin:30px 0;
+
+}
+
+
+
+
+/*
+====================================================
+Generated Reports
+====================================================
+*/
+
+.reports-section{
+
+    padding:100px 0;
+
+    background:#ffffff;
+
+}
+
+.report-card{
+
+    background:#ffffff;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    height:100%;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+
+    transition:all .3s ease;
+
+    text-align:left;
+
+}
+
+.report-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 40px rgba(37,99,235,.12);
+
+}
+
+.report-icon{
+
+    font-size:42px;
+
+    color:var(--primary);
+
+    margin-bottom:20px;
+
+}
+
+.report-card h4{
+
+    margin-bottom:15px;
+
+    font-weight:600;
+
+}
+
+.report-card p{
+
+    color:#6B7280;
+
+    line-height:1.7;
+
+    margin-bottom:25px;
+
+}
