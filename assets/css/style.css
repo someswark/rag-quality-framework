@@ -51,3 +51,98 @@ body{
     color:var(--text);
 
 }
+
+
+/*
+==============================================
+Navigation
+==============================================
+*/
+
+.custom-navbar{
+
+    background:#FFFFFF;
+
+    padding:16px 0;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.05);
+
+}
+
+.logo-box{
+
+    width:54px;
+
+    height:54px;
+
+    border-radius:12px;
+
+    background:var(--primary);
+
+    color:#FFFFFF;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-weight:700;
+
+    font-size:22px;
+
+    margin-right:14px;
+
+}
+
+.brand-text{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.brand-title{
+
+    font-size:18px;
+
+    font-weight:600;
+
+    color:var(--text);
+
+}
+
+.brand-subtitle{
+
+    font-size:12px;
+
+    color:#6B7280;
+
+}
+
+.navbar-nav .nav-link{
+
+    color:var(--text);
+
+    font-weight:500;
+
+    margin-left:18px;
+
+    transition:.3s;
+
+}
+
+.navbar-nav .nav-link:hover{
+
+    color:var(--primary);
+
+}
+
+.github-btn{
+
+    border-radius:10px;
+
+    padding:10px 18px;
+
+}
