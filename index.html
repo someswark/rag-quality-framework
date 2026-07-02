@@ -53,11 +53,15 @@
 Navigation
 ========================================== -->
 
-<nav class="navbar navbar-expand-lg navbar-light fixed-top custom-navbar">
+<header>
+
+<nav class="navbar navbar-expand-xl fixed-top custom-navbar">
 
     <div class="container">
 
-        <a class="navbar-brand d-flex align-items-center" href="#">
+        <!-- Logo -->
+
+        <a class="navbar-brand d-flex align-items-center" href="#hero">
 
             <div class="logo-box">
 
@@ -65,7 +69,7 @@ Navigation
 
             </div>
 
-            <div class="brand-text">
+            <div class="brand-info">
 
                 <span class="brand-title">
 
@@ -75,7 +79,7 @@ Navigation
 
                 <span class="brand-subtitle">
 
-                    AI Quality Engineering
+                    Building Trust in Enterprise AI Responses
 
                 </span>
 
@@ -83,114 +87,60 @@ Navigation
 
         </a>
 
+        <!-- Mobile Toggle -->
+
         <button class="navbar-toggler"
 
                 type="button"
 
                 data-bs-toggle="collapse"
 
-                data-bs-target="#navbarNav">
+                data-bs-target="#mainMenu">
 
             <span class="navbar-toggler-icon"></span>
 
         </button>
 
+        <!-- Navigation Menu -->
+
         <div class="collapse navbar-collapse"
 
-             id="navbarNav">
+             id="mainMenu">
 
-            <ul class="navbar-nav ms-auto">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
 
                 <li class="nav-item">
-
-                    <a class="nav-link"
-
-                       href="#hero">
-
-                        Home
-
-                    </a>
-
+                    <a class="nav-link" href="#hero">Overview</a>
                 </li>
 
                 <li class="nav-item">
-
-                    <a class="nav-link"
-
-                       href="#why-ai">
-
-                        Why AI Quality
-
-                    </a>
-
+                    <a class="nav-link" href="#why-quality">Why AI Quality</a>
                 </li>
 
                 <li class="nav-item">
-
-                    <a class="nav-link"
-
-                       href="#solution">
-
-                        How It Works
-
-                    </a>
-
+                    <a class="nav-link" href="#workflow">How It Works</a>
                 </li>
 
                 <li class="nav-item">
-
-                    <a class="nav-link"
-
-                       href="#dashboard">
-
-                        Dashboard
-
-                    </a>
-
+                    <a class="nav-link" href="#dashboard">Dashboard</a>
                 </li>
 
                 <li class="nav-item">
-
-                    <a class="nav-link"
-
-                       href="#reports">
-
-                        Reports
-
-                    </a>
-
+                    <a class="nav-link" href="#reports">Reports</a>
                 </li>
 
                 <li class="nav-item">
-
-                    <a class="nav-link"
-
-                       href="#roadmap">
-
-                        Roadmap
-
-                    </a>
-
+                    <a class="nav-link" href="#roadmap">Roadmap</a>
                 </li>
 
                 <li class="nav-item">
-
-                    <a class="nav-link"
-
-                       href="#author">
-
-                        Author
-
-                    </a>
-
+                    <a class="nav-link" href="#author">Author</a>
                 </li>
 
                 <li class="nav-item ms-lg-3">
 
                     <a class="btn btn-primary github-btn"
-
                        href="https://github.com/someswark/rag-quality-framework"
-
                        target="_blank">
 
                         <i class="bi bi-github"></i>
@@ -209,11 +159,260 @@ Navigation
 
 </nav>
 
+</header>
 
 
-    <!-- Hero -->
 
+<!-- ==========================================
+Hero Section
+========================================== -->
 
+<section id="hero" class="hero-section">
+
+    <div class="container">
+
+        <div class="hero-content text-center">
+
+            <span class="hero-badge">
+
+                Open Source • Pilot Implementation • Version 2.0
+
+            </span>
+
+            <h1>
+
+                Enterprise RAG Quality Framework
+
+            </h1>
+
+            <h2>
+
+                Building Trust in Enterprise AI Responses
+
+            </h2>
+
+            <p>
+
+                Measure, validate, and improve enterprise AI response quality
+                through structured evaluation, actionable insights, and
+                executive-ready reporting.
+
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#workflow" class="btn btn-primary btn-lg">
+
+                    Explore Solution
+
+                </a>
+
+                <a href="#dashboard" class="btn btn-outline-primary btn-lg">
+
+                    View Dashboard
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+Enterprise AI Evaluation Workflow
+========================================== -->
+
+<section id="workflow" class="workflow-section">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <span class="section-badge">
+                Enterprise AI Evaluation Workflow
+            </span>
+
+            <h2 class="section-title">
+                Evaluate Multiple Enterprise AI Applications
+            </h2>
+
+            <p class="section-description">
+
+                A reusable AI Quality Engineering framework designed to evaluate
+                different categories of enterprise AI applications through
+                standardized quality metrics and executive reporting.
+
+            </p>
+
+        </div>
+
+        <div class="row g-4 justify-content-center">
+
+            <!-- Card 1 -->
+
+            <div class="col-lg-2 col-md-4 col-sm-6">
+
+                <div class="workflow-card">
+
+                    <div class="workflow-icon">
+                        <i class="bi bi-database"></i>
+                    </div>
+
+                    <h5>Enterprise Knowledge</h5>
+
+                    <ul>
+
+                        <li>Policies</li>
+                        <li>SOPs</li>
+                        <li>Manuals</li>
+                        <li>FAQs</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <!-- Arrow -->
+
+            <div class="col-auto d-none d-lg-flex align-items-center">
+
+                <i class="bi bi-arrow-right workflow-arrow"></i>
+
+            </div>
+
+            <!-- Card 2 -->
+
+            <div class="col-lg-2 col-md-4 col-sm-6">
+
+                <div class="workflow-card">
+
+                    <div class="workflow-icon">
+                        <i class="bi bi-robot"></i>
+                    </div>
+
+                    <h5>Enterprise AI Application</h5>
+
+                    <ul>
+
+                        <li>RAG Chatbot</li>
+                        <li>AI Agent</li>
+                        <li>AI Copilot</li>
+                        <li>Enterprise Search</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <!-- Arrow -->
+
+            <div class="col-auto d-none d-lg-flex align-items-center">
+
+                <i class="bi bi-arrow-right workflow-arrow"></i>
+
+            </div>
+
+            <!-- Card 3 -->
+
+            <div class="col-lg-2 col-md-4 col-sm-6">
+
+                <div class="workflow-card">
+
+                    <div class="workflow-icon">
+                        <i class="bi bi-clipboard2-check"></i>
+                    </div>
+
+                    <h5>AI Quality Evaluation</h5>
+
+                    <ul>
+
+                        <li>Accuracy</li>
+                        <li>Grounding</li>
+                        <li>Completeness</li>
+                        <li>Safety</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <!-- Arrow -->
+
+            <div class="col-auto d-none d-lg-flex align-items-center">
+
+                <i class="bi bi-arrow-right workflow-arrow"></i>
+
+            </div>
+
+            <!-- Card 4 -->
+
+            <div class="col-lg-2 col-md-4 col-sm-6">
+
+                <div class="workflow-card">
+
+                    <div class="workflow-icon">
+                        <i class="bi bi-speedometer2"></i>
+                    </div>
+
+                    <h5>Executive Dashboard</h5>
+
+                    <ul>
+
+                        <li>KPIs</li>
+                        <li>Quality Score</li>
+                        <li>Trends</li>
+                        <li>Insights</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <!-- Arrow -->
+
+            <div class="col-auto d-none d-lg-flex align-items-center">
+
+                <i class="bi bi-arrow-right workflow-arrow"></i>
+
+            </div>
+
+            <!-- Card 5 -->
+
+            <div class="col-lg-2 col-md-4 col-sm-6">
+
+                <div class="workflow-card">
+
+                    <div class="workflow-icon">
+                        <i class="bi bi-file-earmark-text"></i>
+                    </div>
+
+                    <h5>Reports & Insights</h5>
+
+                    <ul>
+
+                        <li>Executive Report</li>
+                        <li>HTML Report</li>
+                        <li>Detailed Results</li>
+                        <li>Recommendations</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 
     <!-- Why AI Quality -->
 
