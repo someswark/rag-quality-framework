@@ -691,3 +691,97 @@ Technology Ecosystem
     font-weight:600;
 
 }
+
+
+
+/*=========================================================
+Executive Dashboard
+=========================================================*/
+
+.dashboard-section{
+
+    padding:110px 0;
+
+    background:#FFFFFF;
+
+}
+
+.metric-card{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:35px;
+
+    text-align:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.05);
+
+    transition:.3s;
+
+}
+
+.metric-card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.metric-card h3{
+
+    color:var(--primary-color);
+
+    font-size:46px;
+
+    font-weight:700;
+
+}
+
+.metric-card p{
+
+    margin-top:10px;
+
+    color:#6B7280;
+
+}
+
+.health-card{
+
+    background:#F8FAFC;
+
+    border-left:6px solid #10B981;
+
+    border-radius:18px;
+
+    padding:35px;
+
+}
+
+.dashboard-table{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:30px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+
+}
+
+.status-pass{
+
+    background:#DCFCE7;
+
+    color:#15803D;
+
+    padding:6px 14px;
+
+    border-radius:30px;
+
+    font-size:13px;
+
+    font-weight:700;
+
+}

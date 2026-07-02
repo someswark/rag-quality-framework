@@ -1,0 +1,14 @@
+[
+  {
+    "question": "What is SnapMirror?",
+    "score": 97,
+    "status": "PASS",
+    "category": "Storage"
+  },
+  {
+    "question": "What is MetroCluster?",
+    "score": 96,
+    "status": "PASS",
+    "category": "Disaster Recovery"
+  }
+]
