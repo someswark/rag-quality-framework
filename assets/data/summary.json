@@ -1,0 +1,44 @@
+{
+  "framework": {
+    "name": "Enterprise RAG Quality Framework",
+    "version": "2.0",
+    "evaluation_date": "2026-07-02",
+    "evaluation_profile": "Enterprise Standard"
+  },
+
+  "application": {
+    "type": "Enterprise AI Copilot",
+    "knowledge_source": "HR Knowledge Base",
+    "model_provider": "Configurable"
+  },
+
+  "overall_quality": {
+    "score": 82,
+    "rating": "Excellent",
+    "pass": 23,
+    "review": 1,
+    "fail": 1
+  },
+
+  "metrics": {
+    "accuracy": 96,
+    "grounding": 94,
+    "completeness": 92,
+    "safety": 98,
+    "hallucination": 2
+  },
+
+  "latest_evaluation": {
+    "question": "What is SnapMirror?",
+    "status": "PASS",
+    "confidence": 96
+  },
+
+"reports": {
+  "latest": {
+    "executive_summary": "assets/reports/executive-summary.html",
+    "detailed_report": "assets/reports/detailed-report.html",
+    "dashboard": "assets/reports/dashboard.html"
+  }
+}
+}

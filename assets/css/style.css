@@ -743,3 +743,287 @@ Generated Reports
     margin-bottom:25px;
 
 }
+
+
+/*
+====================================================
+Product Roadmap
+====================================================
+*/
+
+.roadmap-section{
+
+    padding:100px 0;
+
+    background:#F8FAFC;
+
+}
+
+.roadmap{
+
+    position:relative;
+
+    max-width:800px;
+
+    margin:0 auto;
+
+}
+
+.roadmap::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:20px;
+
+    top:0;
+
+    width:3px;
+
+    height:100%;
+
+    background:#DBEAFE;
+
+}
+
+.roadmap-item{
+
+    display:flex;
+
+    gap:30px;
+
+    margin-bottom:60px;
+
+    position:relative;
+
+}
+
+.roadmap-marker{
+
+    width:40px;
+
+    height:40px;
+
+    border-radius:50%;
+
+    background:#2563EB;
+
+    flex-shrink:0;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.roadmap-marker.current{
+
+    background:#10B981;
+
+}
+
+.roadmap-marker.future{
+
+    background:#F59E0B;
+
+}
+
+.roadmap-content{
+
+    background:#ffffff;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    width:100%;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+
+}
+
+.roadmap-version{
+
+    color:var(--primary);
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+.roadmap-content h4{
+
+    margin:10px 0 20px;
+
+}
+
+.roadmap-content ul{
+
+    margin:0;
+
+    padding-left:20px;
+
+}
+
+.roadmap-content li{
+
+    margin-bottom:10px;
+
+    color:#6B7280;
+
+}
+
+
+/*
+====================================================
+About the Author
+====================================================
+*/
+
+.author-section{
+
+    padding:100px 0;
+
+    background:#ffffff;
+
+}
+
+.author-card{
+
+    background:#ffffff;
+
+    border-radius:20px;
+
+    padding:50px;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.06);
+
+}
+
+.author-avatar{
+
+    font-size:110px;
+
+    color:var(--primary);
+
+    margin-bottom:20px;
+
+}
+
+.skills{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+}
+
+.skills span{
+
+    background:#EFF6FF;
+
+    color:var(--primary);
+
+    padding:8px 16px;
+
+    border-radius:30px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+
+/*
+====================================================
+Footer
+====================================================
+*/
+
+.footer{
+
+    background:#1F2937;
+
+    color:#E5E7EB;
+
+    padding:70px 0 25px;
+
+}
+
+.footer h4,
+.footer h5{
+
+    color:#ffffff;
+
+    margin-bottom:20px;
+
+}
+
+.footer p{
+
+    color:#D1D5DB;
+
+    line-height:1.8;
+
+}
+
+.footer-links{
+
+    list-style:none;
+
+    padding:0;
+
+}
+
+.footer-links li{
+
+    margin-bottom:12px;
+
+}
+
+.footer-links a{
+
+    color:#D1D5DB;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.footer-links a:hover{
+
+    color:#60A5FA;
+
+}
+
+.footer hr{
+
+    border-color:#374151;
+
+    margin:40px 0 25px;
+
+}
+
+.footer-bottom{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+    color:#9CA3AF;
+
+    font-size:14px;
+
+}

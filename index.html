@@ -593,27 +593,27 @@ Executive Dashboard Preview
 
                         <tr>
                             <td>Application Type</td>
-                            <td><strong>Enterprise AI Copilot</strong></td>
+                            <td><strong id="application-type">Enterprise AI Copilot</strong></td>
                         </tr>
 
                         <tr>
                             <td>Knowledge Source</td>
-                            <td><strong>HR Knowledge Base</strong></td>
+                            <td><strong id="knowledge-source">HR Knowledge Base</strong></td>
                         </tr>
 
                         <tr>
                             <td>Framework Version</td>
-                            <td><strong>2.0</strong></td>
+                            <td><strong id="framework-version">2.0</strong></td>
                         </tr>
 
                         <tr>
                             <td>Evaluation Date</td>
-                            <td><strong>02 Jul 2026</strong></td>
+                            <td><strong id="evaluation-date">02 Jul 2026</strong></td>
                         </tr>
 
                         <tr>
                             <td>LLM Provider</td>
-                            <td><strong>Configurable</strong></td>
+                            <td><strong id="model-provider">Configurable</strong></td>
                         </tr>
 
                     </table>
@@ -632,35 +632,42 @@ Executive Dashboard Preview
 
                     <div class="quality-score">
 
-                        94%
+                        <div id="quality-score">
+
+    94%
+
+</div>
 
                     </div>
 
-                    <span class="badge bg-success fs-6">
+<span class="badge bg-success fs-6" id="quality-rating">
 
-                        Excellent
+    Excellent
 
-                    </span>
+</span>
 
                     <div class="mt-4">
 
-                        <span class="badge bg-success me-2">
+<span class="badge bg-success me-2">
 
-                            PASS 23
+    PASS
+    <span id="pass-count">23</span>
 
-                        </span>
+</span>
 
-                        <span class="badge bg-warning text-dark me-2">
+<span class="badge bg-warning text-dark me-2">
 
-                            REVIEW 1
+    REVIEW
+    <span id="review-count">1</span>
 
-                        </span>
+</span>
 
-                        <span class="badge bg-danger">
+ <span class="badge bg-danger">
 
-                            FAIL 1
+    FAIL
+    <span id="fail-count">1</span>
 
-                        </span>
+</span>
 
                     </div>
 
@@ -803,6 +810,345 @@ Generated Reports
 
 </section>
 
+
+
+<!-- ==========================================
+Product Roadmap
+========================================== -->
+
+<section id="roadmap" class="roadmap-section">
+
+    <div class="container">
+
+        <div class="section-header text-center">
+
+            <span class="section-badge">
+                Product Roadmap
+            </span>
+
+            <h2 class="section-title">
+                Building the Future of Enterprise AI Quality
+            </h2>
+
+            <p class="section-description">
+
+                The Enterprise RAG Quality Framework is designed to evolve into
+                a comprehensive AI Quality Engineering platform supporting
+                multiple enterprise AI applications.
+
+            </p>
+
+        </div>
+
+        <div class="roadmap">
+
+            <!-- Version 2.0 -->
+
+            <div class="roadmap-item">
+
+                <div class="roadmap-marker current"></div>
+
+                <div class="roadmap-content">
+
+                    <span class="roadmap-version">
+                        Current Release
+                    </span>
+
+                    <h4>Version 2.0</h4>
+
+                    <ul>
+
+                        <li>Enterprise AI Evaluation Workflow</li>
+                        <li>Executive Dashboard</li>
+                        <li>Generated Reports</li>
+                        <li>Responsive Product Website</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <!-- Version 3.0 -->
+
+            <div class="roadmap-item">
+
+                <div class="roadmap-marker"></div>
+
+                <div class="roadmap-content">
+
+                    <span class="roadmap-version">
+                        Next Release
+                    </span>
+
+                    <h4>Version 3.0</h4>
+
+                    <ul>
+
+                        <li>Multi-Model Evaluation</li>
+                        <li>AI Agent Evaluation</li>
+                        <li>REST API Integration</li>
+                        <li>CI/CD Quality Gates</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <!-- Future Vision -->
+
+            <div class="roadmap-item">
+
+                <div class="roadmap-marker future"></div>
+
+                <div class="roadmap-content">
+
+                    <span class="roadmap-version">
+                        Future Vision
+                    </span>
+
+                    <h4>Beyond 3.0</h4>
+
+                    <ul>
+
+                        <li>Conversation Analytics</li>
+                        <li>Enterprise Portal</li>
+                        <li>Cloud Deployment</li>
+                        <li>AI Quality Benchmarking</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+About the Author
+========================================== -->
+
+<section id="author" class="author-section">
+
+    <div class="container">
+
+        <div class="section-header text-center">
+
+            <span class="section-badge">
+
+                About the Author
+
+            </span>
+
+            <h2 class="section-title">
+
+                Meet the Creator
+
+            </h2>
+
+            <p class="section-description">
+
+                Passionate about Software Quality Engineering, AI Quality Engineering,
+                and building enterprise-ready solutions for trustworthy AI.
+
+            </p>
+
+        </div>
+
+        <div class="author-card">
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-4 text-center">
+
+                    <div class="author-avatar">
+
+                        <i class="bi bi-person-circle"></i>
+
+                    </div>
+
+                    <h3>K. Someswara Rao</h3>
+
+                    <p>
+
+                        QA Architect • AI Quality Engineer
+
+                    </p>
+
+                </div>
+
+                <div class="col-lg-8">
+
+                    <h4>Professional Summary</h4>
+
+                    <p>
+
+                        QA Architect with 20+ years of experience in Software Quality Engineering,
+                        Test Automation, API Testing, Performance Testing, and Enterprise AI Quality.
+                        Passionate about designing scalable AI evaluation frameworks and
+                        enterprise-quality solutions.
+
+                    </p>
+
+                    <h5 class="mt-4">Core Skills</h5>
+
+                    <div class="skills">
+
+                        <span>Java</span>
+                        <span>Python</span>
+                        <span>Selenium</span>
+                        <span>Playwright</span>
+                        <span>REST API</span>
+                        <span>AI Testing</span>
+                        <span>RAG Evaluation</span>
+                        <span>CI/CD</span>
+                        <span>Azure DevOps</span>
+
+                    </div>
+
+                    <div class="mt-4">
+
+                        <a href="https://github.com/someswark"
+                           target="_blank"
+                           class="btn btn-primary">
+
+                            <i class="bi bi-github"></i>
+
+                            GitHub
+
+                        </a>
+
+                        <!-- Replace with your LinkedIn URL -->
+
+                        <a href="#"
+                           class="btn btn-outline-primary ms-2">
+
+                            <i class="bi bi-linkedin"></i>
+
+                            LinkedIn
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+Footer
+========================================== -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="row">
+
+            <!-- Product -->
+
+            <div class="col-lg-4 mb-4">
+
+                <h4>Enterprise RAG Quality Framework</h4>
+
+                <p>
+
+                    Building Trust in Enterprise AI Responses through
+                    standardized AI Quality Engineering.
+
+                </p>
+
+            </div>
+
+            <!-- Quick Links -->
+
+            <div class="col-lg-4 mb-4">
+
+                <h5>Quick Links</h5>
+
+                <ul class="footer-links">
+
+                    <li><a href="#hero">Overview</a></li>
+
+                    <li><a href="#workflow">Evaluation Workflow</a></li>
+
+                    <li><a href="#dashboard">Executive Dashboard</a></li>
+
+                    <li><a href="#reports">Generated Reports</a></li>
+
+                    <li><a href="#roadmap">Product Roadmap</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Author -->
+
+            <div class="col-lg-4 mb-4">
+
+                <h5>Author</h5>
+
+                <p>
+
+                    <strong>K. Someswara Rao</strong><br>
+
+                    QA Architect | Enterprise AI Quality Engineer
+
+                </p>
+
+                <a href="https://github.com/someswark"
+                   target="_blank"
+                   class="btn btn-outline-light btn-sm">
+
+                    <i class="bi bi-github"></i>
+
+                    GitHub
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="footer-bottom">
+
+            <div>
+
+                <strong>Enterprise RAG Quality Framework • Version 2.0</strong>
+
+                &nbsp; | &nbsp;
+
+                Open Source (MIT License)
+
+            </div>
+
+            <div>
+
+                © 2026 K. Someswara Rao
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
     <!-- Why AI Quality -->
 
 
@@ -834,6 +1180,7 @@ Generated Reports
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 
 <script src="assets/js/app.js"></script>
+<script src="assets/js/dashboard.js"></script>
 
 </body>
 
