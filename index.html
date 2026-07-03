@@ -678,6 +678,202 @@ Executive Dashboard Preview
         </div>
 
     </div>
+	
+	<div class="row g-4 mt-2">
+
+    <!-- Quality Metrics -->
+
+    <div class="col-lg-6">
+
+        <div class="dashboard-card">
+
+            <h4>Quality Metrics</h4>
+
+            <!-- Accuracy -->
+
+            <div class="metric-item">
+
+                <div class="d-flex justify-content-between">
+
+                    <span>Accuracy</span>
+
+                    <span id="accuracy-score">96%</span>
+
+                </div>
+
+                <div class="progress">
+
+                    <div id="accuracy-bar"
+                         class="progress-bar bg-success"
+                         style="width:96%">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Grounding -->
+
+            <div class="metric-item mt-4">
+
+                <div class="d-flex justify-content-between">
+
+                    <span>Grounding</span>
+
+                    <span id="grounding-score">94%</span>
+
+                </div>
+
+                <div class="progress">
+
+                    <div id="grounding-bar"
+                         class="progress-bar bg-primary"
+                         style="width:94%">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Completeness -->
+
+            <div class="metric-item mt-4">
+
+                <div class="d-flex justify-content-between">
+
+                    <span>Completeness</span>
+
+                    <span id="completeness-score">92%</span>
+
+                </div>
+
+                <div class="progress">
+
+                    <div id="completeness-bar"
+                         class="progress-bar bg-info"
+                         style="width:92%">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Safety -->
+
+            <div class="metric-item mt-4">
+
+                <div class="d-flex justify-content-between">
+
+                    <span>Safety</span>
+
+                    <span id="safety-score">98%</span>
+
+                </div>
+
+                <div class="progress">
+
+                    <div id="safety-bar"
+                         class="progress-bar bg-success"
+                         style="width:98%">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Hallucination -->
+
+            <div class="metric-item mt-4">
+
+                <div class="d-flex justify-content-between">
+
+                    <span>Hallucination</span>
+
+                    <span id="hallucination-score">2%</span>
+
+                </div>
+
+                <div class="progress">
+
+                    <div id="hallucination-bar"
+                         class="progress-bar bg-danger"
+                         style="width:2%">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Latest Evaluation -->
+
+    <div class="col-lg-6">
+
+        <div class="dashboard-card">
+
+            <h4>Latest Evaluation</h4>
+
+            <p class="text-muted mb-2">
+
+                Latest Question
+
+            </p>
+
+            <h5 id="latest-question">
+
+                What is SnapMirror?
+
+            </h5>
+
+            <hr>
+
+            <div class="d-flex justify-content-between">
+
+                <span>Status</span>
+
+                <span id="latest-status"
+                      class="badge bg-success">
+
+                    PASS
+
+                </span>
+
+            </div>
+
+            <div class="d-flex justify-content-between mt-3">
+
+                <span>Confidence</span>
+
+                <strong id="latest-confidence">
+
+                    96%
+
+                </strong>
+
+            </div>
+
+            <a href="#reports"
+               class="btn btn-primary mt-4">
+
+                View HTML Report
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+	
+	
 
 </section>
 

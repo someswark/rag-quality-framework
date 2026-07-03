@@ -20,19 +20,19 @@
     "fail": 1
   },
 
-  "metrics": {
+"metrics": {
     "accuracy": 96,
     "grounding": 94,
     "completeness": 92,
     "safety": 98,
     "hallucination": 2
-  },
+},
 
-  "latest_evaluation": {
+"latest_evaluation": {
     "question": "What is SnapMirror?",
     "status": "PASS",
     "confidence": 96
-  },
+},
 
 "reports": {
   "latest": {

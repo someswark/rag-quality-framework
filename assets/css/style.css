@@ -1027,3 +1027,19 @@ Footer
     font-size:14px;
 
 }
+
+.metric-item .progress{
+
+    height:10px;
+
+    border-radius:10px;
+
+    background:#E5E7EB;
+
+}
+
+.metric-item span{
+
+    font-size:15px;
+
+}

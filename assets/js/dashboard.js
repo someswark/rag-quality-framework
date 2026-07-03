@@ -15,7 +15,7 @@ async function loadDashboard() {
 
     try {
 		
-        const response = await fetch(`assets/data/summary.json?t=${new Date().getTime()}`);
+        const response = await fetch(`assets/data/summary.json`);
 
         const data = await response.json();
 
@@ -78,5 +78,85 @@ function populateDashboard(data) {
 
     document.getElementById("fail-count").textContent =
         data.overall_quality.fail;
+		
+		
+		setMetric(
+    "accuracy",
+    data.metrics.accuracy
+);
+
+setMetric(
+    "grounding",
+    data.metrics.grounding
+);
+
+setMetric(
+    "completeness",
+    data.metrics.completeness
+);
+
+setMetric(
+    "safety",
+    data.metrics.safety
+);
+
+setMetric(
+    "hallucination",
+    data.metrics.hallucination
+);
+
+// Latest Evaluation
+
+document.getElementById("latest-question").textContent =
+    data.latest_evaluation.question;
+
+document.getElementById("latest-status").textContent =
+    data.latest_evaluation.status;
+
+document.getElementById("latest-confidence").textContent =
+    data.latest_evaluation.confidence + "%";
+	
+	
+	
+	
+setText("quality-score", data.overall_quality.score + "%");
+setText("latest-question", data.latest_evaluation.question);
+setText("latest-confidence", data.latest_evaluation.confidence + "%");
+
+}
+
+function setMetric(name, value){
+
+    document.getElementById(
+        name + "-score"
+    ).textContent = value + "%";
+
+    document.getElementById(
+        name + "-bar"
+    ).style.width = value + "%";
+
+}
+
+function setText(id, value){
+
+    const element = document.getElementById(id);
+
+    if(element){
+
+        element.textContent = value ?? "N/A";
+
+    }
+
+}
+
+function setWidth(id, value){
+
+    const element = document.getElementById(id);
+
+    if(element){
+
+        element.style.width = value + "%";
+
+    }
 
 }
