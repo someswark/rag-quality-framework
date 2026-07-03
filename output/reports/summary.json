@@ -1,0 +1,36 @@
+{
+  "framework_version": "1.0",
+  "generated_date": "2026-07-02",
+  "knowledge_base": "Enterprise Employee Handbook",
+  "llm": "Gemini 2.5 Flash",
+  "questions_evaluated": 25,
+  "pass": 23,
+  "review": 1,
+  "fail": 1,
+  "average_score": 94,
+  "average_latency": "1.2 sec",
+  "metrics": {
+    "accuracy": 96,
+    "grounding": 93,
+    "relevance": 95,
+    "completeness": 91,
+    "hallucination": 2
+  },
+"reports": {
+  "executive_summary": {
+    "title": "Executive Summary",
+    "path": "assets/reports/executive-summary.html",
+    "generated_on": "2026-07-03 18:30"
+  },
+  "detailed_report": {
+    "title": "Detailed Evaluation Report",
+    "path": "assets/reports/detailed-report.html",
+    "generated_on": "2026-07-03 18:30"
+  },
+  "dashboard_report": {
+    "title": "Interactive Dashboard",
+    "path": "assets/reports/dashboard-report.html",
+    "generated_on": "2026-07-03 18:30"
+  }
+}
+}

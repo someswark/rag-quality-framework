@@ -15,7 +15,9 @@ async function loadDashboard() {
 
     try {
 		
-        const response = await fetch(`assets/data/summary.json`);
+       // const response = await fetch(`assets/data/summary.json`);
+	   
+	    const response = await fetch(`fetch("../output/data/summary.json")`);
 
         const data = await response.json();
 
@@ -122,6 +124,21 @@ document.getElementById("latest-confidence").textContent =
 setText("quality-score", data.overall_quality.score + "%");
 setText("latest-question", data.latest_evaluation.question);
 setText("latest-confidence", data.latest_evaluation.confidence + "%");
+setText(
+    "report-generated-date",
+    data.reports.executive_summary.generated_on
+);
+
+
+const reportLink = document.getElementById("report-link");
+
+if (reportLink) {
+
+    reportLink.href =
+        data.reports.executive_summary.path;
+
+}
+
 
 }
 
