@@ -1,0 +1,38 @@
+{
+  "framework": {
+    "name": "Enterprise RAG Quality Framework",
+    "version": "2.0"
+  },
+
+  "application": {
+    "name": "Enterprise AI Copilot",
+    "type": "RAG Chatbot",
+    "description": "Internal enterprise knowledge assistant"
+  },
+
+  "knowledge_source": {
+    "name": "HR Knowledge Base",
+    "type": "PDF Documents"
+  },
+
+  "llm": {
+    "provider": "Google",
+    "model": "gemini-2.5-flash"
+  },
+
+  "evaluation": {
+    "dataset": "golden_dataset.csv",
+    "metrics": [
+      "accuracy",
+      "grounding",
+      "completeness",
+      "safety",
+      "hallucination"
+    ]
+  },
+
+  "output": {
+    "summary_json": "../website/assets/data/summary.json",
+    "reports_folder": "../website/assets/reports"
+  }
+}
