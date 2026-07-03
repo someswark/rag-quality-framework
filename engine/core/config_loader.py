@@ -19,16 +19,22 @@ class ConfigLoader:
         return self.config
 
     def get_framework(self):
-        return self.config["framework"]
+        return self.config.get("framework", {})
+
+    def get_execution(self):
+        return self.config.get("execution", {})
 
     def get_application(self):
-        return self.config["application"]
+        return self.config.get("application", {})
+
+    def get_knowledge_source(self):
+        return self.config.get("knowledge_source", {})
 
     def get_llm(self):
-        return self.config["llm"]
-
-    def get_output(self):
-        return self.config["output"]
+        return self.config.get("llm", {})
 
     def get_evaluation(self):
-        return self.config["evaluation"]
+        return self.config.get("evaluation", {})
+
+    def get_output(self):
+        return self.config.get("output", {})

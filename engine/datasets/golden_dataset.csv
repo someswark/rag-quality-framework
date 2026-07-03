@@ -1,0 +1,6 @@
+id,category,question,expected_answer
+1,Storage,What is SnapMirror?,SnapMirror replicates data between NetApp storage systems.
+2,Storage,What is MetroCluster?,MetroCluster provides synchronous replication for disaster recovery.
+3,Storage,What is ONTAP?,ONTAP is NetApp's storage operating system.
+4,Networking,What is VLAN?,A VLAN is a logical network segmentation.
+5,Cloud,What is Kubernetes?,Kubernetes is a container orchestration platform.

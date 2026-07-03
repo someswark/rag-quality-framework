@@ -1,7 +1,12 @@
 {
   "framework": {
-    "name": "Enterprise RAG Quality Framework",
+    "name": "Enterprise AI Quality Framework",
     "version": "2.0"
+  },
+
+  "execution": {
+    "mode": "mock",
+    "profile": "demo"
   },
 
   "application": {

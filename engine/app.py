@@ -1,11 +1,12 @@
-from core.config_loader import ConfigLoader
+from core.framework import EnterpriseAIQualityFramework
 
-config = ConfigLoader().get()
 
-print("\nFramework Configuration\n")
+def main():
 
-print(config["framework"]["name"])
+    framework = EnterpriseAIQualityFramework()
 
-print(config["application"]["name"])
+    framework.run()
 
-print(config["llm"]["model"])
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,13 @@
+{
+  "What is SnapMirror?": {
+    "answer": "SnapMirror replicates data between NetApp storage systems.",
+    "confidence": 96,
+    "latency": 450
+  },
+
+  "What is MetroCluster?": {
+    "answer": "MetroCluster provides synchronous replication for disaster recovery.",
+    "confidence": 94,
+    "latency": 520
+  }
+}
