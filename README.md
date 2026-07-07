@@ -1,6 +1,6 @@
 # Enterprise AI Quality Framework
 
-An enterprise-ready AI Quality Assessment Framework for evaluating Generative AI (GenAI) and Retrieval-Augmented Generation (RAG) applications.
+Enterprise AI Quality Assessment Framework for evaluating GenAI, LLM and RAG applications with interactive dashboards, automated reports and modular evaluation engine.
 
 ---
 
@@ -45,6 +45,21 @@ The framework provides:
 - GitHub Pages
 
 ---
+
+## GitHub Topics
+genai
+rag
+llm
+ai-testing
+quality-engineering
+python
+dashboard
+automation-testing
+evaluation-framework
+html
+javascript
+---
+
 
 ## Project Structure
 
