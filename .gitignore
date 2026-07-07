@@ -1,24 +1,15 @@
+# Python cache
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
+*.py[cod]
 
-.venv/
+# Virtual environments
 venv/
+.venv/
 
-.env
-
-.idea/
+# IDE
 .vscode/
+.idea/
 
-*.log
-
-dist/
-build/
-
-*.tmp
-
-Thumbs.db
+# OS
 .DS_Store
-
-website/assets/data/*.json
+Thumbs.db
