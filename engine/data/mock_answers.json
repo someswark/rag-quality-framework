@@ -1,0 +1,156 @@
+{
+  "What is the company's leave policy?": {
+    "generated_answer": "Employees are entitled to annual leave according to the organization's leave policy.",
+    "confidence": 98,
+    "latency_ms": 410,
+    "status": "PASS"
+  },
+  "How can I apply for leave?": {
+    "generated_answer": "Leave applications can be submitted through the employee self-service portal.",
+    "confidence": 96,
+    "latency_ms": 395,
+    "status": "PASS"
+  },
+  "Where can I find the employee handbook?": {
+    "generated_answer": "The employee handbook is available on the company intranet under HR Resources.",
+    "confidence": 92,
+    "latency_ms": 430,
+    "status": "PASS"
+  },
+  "What are the company working hours?": {
+    "generated_answer": "Employees should follow the official working hours defined by the organization.",
+    "confidence": 95,
+    "latency_ms": 405,
+    "status": "PASS"
+  },
+  "How do I update my personal information?": {
+    "generated_answer": "Personal information can be updated through the HR portal.",
+    "confidence": 90,
+    "latency_ms": 420,
+    "status": "PASS"
+  },
+
+  "How do I reset my password?": {
+    "generated_answer": "Reset your password using the self-service password reset portal.",
+    "confidence": 99,
+    "latency_ms": 310,
+    "status": "PASS"
+  },
+  "How can I request a new laptop?": {
+    "generated_answer": "Submit a request through the IT service management portal.",
+    "confidence": 95,
+    "latency_ms": 360,
+    "status": "PASS"
+  },
+  "How do I raise an IT support ticket?": {
+    "generated_answer": "Create a support ticket using the IT helpdesk portal.",
+    "confidence": 94,
+    "latency_ms": 340,
+    "status": "PASS"
+  },
+  "How do I connect to the company VPN?": {
+    "generated_answer": "Follow the VPN setup instructions available in the IT knowledge base.",
+    "confidence": 86,
+    "latency_ms": 455,
+    "status": "REVIEW"
+  },
+  "How do I install approved software?": {
+    "generated_answer": "Approved software can be requested through the IT support process.",
+    "confidence": 91,
+    "latency_ms": 400,
+    "status": "PASS"
+  },
+
+  "What should I do if I receive a phishing email?": {
+    "generated_answer": "Report the email immediately and do not click suspicious links.",
+    "confidence": 98,
+    "latency_ms": 330,
+    "status": "PASS"
+  },
+  "How should confidential information be handled?": {
+    "generated_answer": "Share confidential information only with authorized personnel.",
+    "confidence": 93,
+    "latency_ms": 390,
+    "status": "PASS"
+  },
+  "What is Multi-Factor Authentication?": {
+    "generated_answer": "Multi-Factor Authentication adds an additional verification step during login.",
+    "confidence": 88,
+    "latency_ms": 410,
+    "status": "REVIEW"
+  },
+  "How do I report a security incident?": {
+    "generated_answer": "Immediately report security incidents to the Information Security team.",
+    "confidence": 97,
+    "latency_ms": 350,
+    "status": "PASS"
+  },
+  "Why should I lock my computer when away?": {
+    "generated_answer": "Locking your computer prevents unauthorized access.",
+    "confidence": 94,
+    "latency_ms": 320,
+    "status": "PASS"
+  },
+
+  "How do I submit an expense claim?": {
+    "generated_answer": "Expense claims should be submitted through the expense management system.",
+    "confidence": 96,
+    "latency_ms": 430,
+    "status": "PASS"
+  },
+  "Where can I download my salary slips?": {
+    "generated_answer": "Salary slips are available in the employee payroll portal.",
+    "confidence": 92,
+    "latency_ms": 380,
+    "status": "PASS"
+  },
+  "How do I apply for travel reimbursement?": {
+    "generated_answer": "Travel reimbursements should be submitted with the required supporting documents.",
+    "confidence": 84,
+    "latency_ms": 470,
+    "status": "REVIEW"
+  },
+  "What is the company travel policy?": {
+    "generated_answer": "Travel policies may vary depending on department requirements.",
+    "confidence": 66,
+    "latency_ms": 520,
+    "status": "FAIL"
+  },
+  "How do I update my bank account details?": {
+    "generated_answer": "Update your bank account information through the HR or payroll portal.",
+    "confidence": 91,
+    "latency_ms": 410,
+    "status": "PASS"
+  },
+
+  "What is the company's code of conduct?": {
+    "generated_answer": "The code of conduct defines expected professional and ethical behavior.",
+    "confidence": 95,
+    "latency_ms": 370,
+    "status": "PASS"
+  },
+  "How do I contact the HR team?": {
+    "generated_answer": "The HR team can be contacted through the employee support portal.",
+    "confidence": 87,
+    "latency_ms": 400,
+    "status": "REVIEW"
+  },
+  "Where can I find company policies?": {
+    "generated_answer": "Company policies are available on the corporate intranet.",
+    "confidence": 93,
+    "latency_ms": 360,
+    "status": "PASS"
+  },
+  "How can I search the knowledge base?": {
+    "generated_answer": "Use the enterprise search feature available on the knowledge portal.",
+    "confidence": 89,
+    "latency_ms": 430,
+    "status": "REVIEW"
+  },
+  "Who should I contact for general support?": {
+    "generated_answer": "For general support, please refer to the FAQ section.",
+    "confidence": 61,
+    "latency_ms": 560,
+    "status": "FAIL"
+  }
+}

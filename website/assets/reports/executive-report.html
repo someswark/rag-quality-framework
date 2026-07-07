@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Executive AI Quality Assessment Report</title>
+
+    <style>
+
+/* ==========================================================
+   Enterprise AI Quality Framework
+   Shared Report Stylesheet
+   Version : 2.0
+========================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:Segoe UI, Arial, sans-serif;
+    background:#f5f7fb;
+    color:#333;
+    line-height:1.6;
+    padding:40px;
+
+}
+
+.container{
+
+    max-width:1100px;
+    margin:auto;
+    background:#ffffff;
+    border-radius:12px;
+    padding:40px;
+    box-shadow:0 4px 12px rgba(0,0,0,.12);
+
+}
+
+/* ==========================================================
+   Header
+========================================================== */
+
+.header{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:3px solid #1565C0;
+    padding-bottom:15px;
+    margin-bottom:25px;
+
+}
+
+.header h1{
+
+    color:#1565C0;
+    font-size:30px;
+
+}
+
+.version{
+
+    font-weight:bold;
+    color:#1565C0;
+    font-size:18px;
+
+}
+
+.subtitle{
+
+    margin-top:8px;
+    color:#555;
+    font-size:22px;
+}
+
+/* ==========================================================
+   Sections
+========================================================== */
+
+.section{
+
+    margin-top:35px;
+
+}
+
+.section h2{
+
+    color:#1565C0;
+    margin-bottom:15px;
+    border-left:5px solid #1565C0;
+    padding-left:12px;
+
+}
+
+/* ==========================================================
+   Hero Score
+========================================================== */
+
+.score-card{
+
+    margin-top:30px;
+    background:#eef5ff;
+    border-radius:12px;
+    text-align:center;
+    padding:40px;
+
+}
+
+.score-title{
+
+    color:#666;
+    letter-spacing:3px;
+    font-size:18px;
+
+}
+
+.score{
+
+    font-size:72px;
+    font-weight:bold;
+    color:#2E7D32;
+    margin-top:15px;
+
+}
+
+.rating{
+
+    display:inline-block;
+    margin-top:20px;
+    background:#2E7D32;
+    color:white;
+    padding:10px 25px;
+    border-radius:25px;
+    font-size:20px;
+    font-weight:bold;
+
+}
+
+/* ==========================================================
+   KPI Cards
+========================================================== */
+
+.kpi-container{
+
+    display:flex;
+    gap:20px;
+    margin-top:35px;
+
+}
+
+.kpi{
+
+    flex:1;
+    background:#ffffff;
+    border-radius:10px;
+    text-align:center;
+    padding:25px;
+    box-shadow:0 2px 8px rgba(0,0,0,.10);
+
+}
+
+.kpi h3{
+
+    color:#1565C0;
+    margin-bottom:15px;
+
+}
+
+.kpi-value{
+
+    font-size:34px;
+    font-weight:bold;
+
+}
+
+/* ==========================================================
+   Tables
+========================================================== */
+
+table{
+
+    width:100%;
+    border-collapse:collapse;
+    margin-top:15px;
+
+}
+
+th{
+
+    background:#1565C0;
+    color:white;
+    padding:12px;
+
+}
+
+td{
+
+    border:1px solid #ddd;
+    padding:12px;
+
+}
+
+tr:nth-child(even){
+
+    background:#f7f7f7;
+
+}
+
+/* ==========================================================
+   Lists
+========================================================== */
+
+ul{
+
+    margin-left:20px;
+
+}
+
+li{
+
+    margin-bottom:10px;
+
+}
+
+/* ==========================================================
+   Status Badges
+========================================================== */
+
+.badge-good{
+
+    background:#2E7D32;
+    color:white;
+    padding:5px 14px;
+    border-radius:15px;
+
+}
+
+.badge-review{
+
+    background:#FB8C00;
+    color:white;
+    padding:5px 14px;
+    border-radius:15px;
+
+}
+
+.badge-fail{
+
+    background:#C62828;
+    color:white;
+    padding:5px 14px;
+    border-radius:15px;
+
+}
+
+/* ==========================================================
+   Footer
+========================================================== */
+
+.footer{
+
+    margin-top:45px;
+    text-align:center;
+    color:#666;
+    font-size:14px;
+    border-top:1px solid #ddd;
+    padding-top:20px;
+
+}
+
+/* ==========================================================
+   Print
+========================================================== */
+
+@media print{
+
+body{
+
+    background:white;
+    padding:0;
+
+}
+
+.container{
+
+    box-shadow:none;
+    padding:0;
+
+}
+
+}
+
+
+
+.question-card{
+
+    margin-top:25px;
+    background:white;
+    border-radius:10px;
+    padding:25px;
+    box-shadow:0 2px 8px rgba(0,0,0,.10);
+
+}
+
+.question-card h3{
+
+    color:#1565C0;
+    margin-bottom:15px;
+
+}
+
+.label{
+
+    font-weight:bold;
+    color:#555;
+
+}
+
+.answer{
+
+    background:#f5f5f5;
+    border-left:4px solid #1565C0;
+    padding:12px;
+    margin-top:8px;
+    margin-bottom:18px;
+
+}
+
+.status{
+
+    display:inline-block;
+    padding:6px 15px;
+    border-radius:20px;
+    color:white;
+    font-weight:bold;
+
+}
+
+.status-pass{
+
+    background:#2E7D32;
+
+}
+
+.status-review{
+
+    background:#FB8C00;
+
+}
+
+.status-fail{
+
+    background:#C62828;
+
+}
+
+.metrics{
+
+    margin-top:15px;
+    display:flex;
+    gap:25px;
+
+}
+
+.metric{
+
+    font-weight:bold;
+
+}
+
+
+.navbar{
+
+    display:flex;
+
+    gap:30px;
+
+    background:#1565C0;
+
+    padding:15px;
+
+    border-radius:8px;
+
+    margin-bottom:30px;
+
+}
+
+.navbar a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+}
+
+.navbar a:hover{
+
+    text-decoration:underline;
+
+}
+
+    </style>
+
+</head>
+
+<body>
+
+
+
+
+<div class="container">
+
+    <!-- ====================================================== -->
+    <!-- Header -->
+    <!-- ====================================================== -->
+
+    <div class="header">
+
+        <div>
+
+            <h1>Enterprise AI Quality Framework</h1>
+
+            <div class="subtitle">
+                Executive AI Quality Assessment Report
+            </div>
+
+        </div>
+
+        <div class="version">
+
+            Version 2.0
+
+        </div>
+
+    </div>
+
+
+
+<div class="navbar">
+
+    <a href="../../dashboard.html">Dashboard</a>
+
+    <a href="executive-report.html">Executive Report</a>
+
+    <a href="detailed-report.html">Detailed Report</a>
+
+</div>
+
+
+    <!-- ====================================================== -->
+    <!-- Application Information -->
+    <!-- ====================================================== -->
+
+    <div class="section">
+
+        <h2>Application Information</h2>
+
+        <table>
+
+            <tr>
+                <td><strong>Application</strong></td>
+                <td>Enterprise AI Copilot</td>
+            </tr>
+
+            <tr>
+                <td><strong>Execution Mode</strong></td>
+                <td>Mock</td>
+            </tr>
+
+            <tr>
+                <td><strong>Evaluation Date</strong></td>
+                <td>06-Jul-2026 08:20</td>
+            </tr>
+
+            <tr>
+                <td><strong>Questions Evaluated</strong></td>
+                <td>25</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+
+    <!-- ====================================================== -->
+    <!-- Hero Score -->
+    <!-- ====================================================== -->
+
+    <div class="score-card">
+
+        <div class="score-title">
+
+            AI QUALITY SCORE
+
+        </div>
+
+        <div class="score">
+
+            89.2%
+
+        </div>
+
+        <div class="rating">
+
+            Good
+
+        </div>
+
+    </div>
+
+
+    <!-- ====================================================== -->
+    <!-- KPI Cards -->
+    <!-- ====================================================== -->
+
+    <div class="kpi-container">
+
+        <div class="kpi">
+
+            <h3>PASS</h3>
+
+            <div class="kpi-value">
+
+                18
+
+            </div>
+
+        </div>
+
+        <div class="kpi">
+
+            <h3>REVIEW</h3>
+
+            <div class="kpi-value">
+
+                5
+
+            </div>
+
+        </div>
+
+        <div class="kpi">
+
+            <h3>FAIL</h3>
+
+            <div class="kpi-value">
+
+                2
+
+            </div>
+
+        </div>
+
+        <div class="kpi">
+
+            <h3>Confidence</h3>
+
+            <div class="kpi-value">
+
+                90.4%
+
+            </div>
+
+        </div>
+
+        <div class="kpi">
+
+            <h3>Latency</h3>
+
+            <div class="kpi-value">
+
+                402.2 ms
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ====================================================== -->
+    <!-- Executive Assessment -->
+    <!-- ====================================================== -->
+
+    <div class="section">
+
+        <h2>Executive Assessment</h2>
+
+        <p>
+
+            The evaluated AI application demonstrates good overall quality with only minor improvement opportunities. The framework recommends deployment after addressing the identified REVIEW and FAIL scenarios.
+
+        </p>
+
+    </div>
+
+
+    <!-- ====================================================== -->
+    <!-- Evaluation Summary -->
+    <!-- ====================================================== -->
+
+    <div class="section">
+
+        <h2>Evaluation Summary</h2>
+
+        <table>
+
+            <tr>
+
+                <th>Metric</th>
+
+                <th>Value</th>
+
+            </tr>
+
+            <tr>
+
+                <td>Total Questions</td>
+
+                <td>25</td>
+
+            </tr>
+
+            <tr>
+
+                <td>PASS</td>
+
+                <td>18</td>
+
+            </tr>
+
+            <tr>
+
+                <td>REVIEW</td>
+
+                <td>5</td>
+
+            </tr>
+
+            <tr>
+
+                <td>FAIL</td>
+
+                <td>2</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Overall Score</td>
+
+                <td>89.2%</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Average Confidence</td>
+
+                <td>90.4%</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Average Latency</td>
+
+                <td>402.2 ms</td>
+
+            </tr>
+
+        </table>
+
+    </div>
+
+
+    <!-- ====================================================== -->
+    <!-- Strengths -->
+    <!-- ====================================================== -->
+
+    <div class="section">
+
+        <h2>Strengths</h2>
+
+        <ul>
+
+            <li>High percentage of successful evaluations.</li><li>High response confidence across evaluated questions.</li><li>Good response latency for evaluated scenarios.</li><li>Configuration-driven and reusable evaluation framework.</li>
+
+        </ul>
+
+    </div>
+
+
+    <!-- ====================================================== -->
+    <!-- Improvement Opportunities -->
+    <!-- ====================================================== -->
+
+    <div class="section">
+
+        <h2>Improvement Opportunities</h2>
+
+        <ul>
+
+            <li>Review medium-confidence responses to improve answer quality.</li><li>Investigate failed scenarios and enhance the knowledge base.</li><li>Expand the Golden Dataset with additional edge-case scenarios.</li>
+
+        </ul>
+
+    </div>
+
+
+    <!-- ====================================================== -->
+    <!-- Recommendations -->
+    <!-- ====================================================== -->
+
+    <div class="section">
+
+        <h2>Recommendations</h2>
+
+        <ul>
+
+            <li>Recommended for User Acceptance Testing (UAT).</li><li>Continue monitoring confidence and latency metrics.</li><li>Re-run the evaluation after knowledge base or prompt updates.</li>
+
+        </ul>
+
+    </div>
+
+
+    <!-- ====================================================== -->
+    <!-- Footer -->
+    <!-- ====================================================== -->
+
+    <div class="footer">
+
+        Generated by <strong>Enterprise AI Quality Framework</strong>
+
+        <br><br>
+
+        Version 2.0
+
+        <br><br>
+
+        Generated On : 06-Jul-2026 08:20
+
+    </div>
+
+</div>
+
+</body>
+
+</html>

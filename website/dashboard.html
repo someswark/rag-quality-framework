@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Enterprise AI Quality Framework Dashboard</title>
+
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+
+</head>
+
+<body>
+
+
+</div>
+
+    <div class="nav-links">
+
+        <a href="dashboard.html">Dashboard</a>
+
+        <a href="assets/reports/executive-report.html" target="_blank">
+            Executive Report
+        </a>
+
+        <a href="assets/reports/detailed-report.html" target="_blank">
+            Detailed Report
+        </a>
+
+        <a href="https://github.com/someswark/rag-quality-framework" target="_blank">
+            GitHub
+        </a>
+
+    </div>
+
+</nav>
+
+
+<div class="container">
+
+    <h1>Enterprise AI Quality Framework</h1>
+    <h2>Evaluation Dashboard</h2>
+
+    <div class="summary-grid">
+
+        <div class="card">
+            <h3>Overall Score</h3>
+            <p id="overallScore">0%</p>
+        </div>
+
+        <div class="card">
+            <h3>Total Questions</h3>
+            <p id="totalQuestions">0</p>
+        </div>
+
+        <div class="card">
+            <h3>PASS</h3>
+            <p id="passCount">0</p>
+        </div>
+
+        <div class="card">
+            <h3>REVIEW</h3>
+            <p id="reviewCount">0</p>
+        </div>
+
+        <div class="card">
+            <h3>FAIL</h3>
+            <p id="failCount">0</p>
+        </div>
+
+        <div class="card">
+            <h3>Confidence</h3>
+            <p id="confidence">0%</p>
+        </div>
+
+        <div class="card">
+            <h3>Latency</h3>
+            <p id="latency">0 ms</p>
+        </div>
+
+    </div>
+
+    <h2>Detailed Evaluation Results</h2>
+
+    <table>
+
+        <thead>
+
+        <tr>
+            <th>#</th>
+            <th>Category</th>
+            <th>Question</th>
+            <th>Status</th>
+            <th>Confidence</th>
+            <th>Latency</th>
+			<th>Action</th>
+        </tr>
+
+        </thead>
+
+        <tbody id="resultsBody">
+
+        </tbody>
+
+    </table>
+
+    <h2>Reports</h2>
+
+    <div class="reports">
+
+        <a href="assets/reports/executive-report.html" target="_blank">
+            Executive Report
+        </a>
+
+        <a href="assets/reports/detailed-report.html" target="_blank">
+            Detailed Report
+        </a>
+
+    </div>
+
+</div>
+
+<script src="assets/js/dashboard.js"></script>
+
+<div id="questionModal" class="modal">
+
+    <div class="modal-content">
+
+        <span class="close" onclick="closeModal()">&times;</span>
+
+        <h2>Evaluation Details</h2>
+
+        <p><strong>Category:</strong> <span id="mCategory"></span></p>
+
+        <p><strong>Question:</strong></p>
+        <div class="answer-box" id="mQuestion"></div>
+
+        <p><strong>Expected Answer:</strong></p>
+        <div class="answer-box" id="mExpected"></div>
+
+        <p><strong>Generated Answer:</strong></p>
+        <div class="answer-box" id="mGenerated"></div>
+
+        <p><strong>Status:</strong> <span id="mStatus"></span></p>
+
+        <p><strong>Confidence:</strong> <span id="mConfidence"></span></p>
+
+        <p><strong>Latency:</strong> <span id="mLatency"></span></p>
+
+		<div class="modal-footer">
+
+			<button onclick="previousQuestion()">◀ Previous</button>
+
+			<button onclick="nextQuestion()">Next ▶</button>
+
+		</div>
+
+
+    </div>
+
+</div>
+
+
+
+</body>
+
+</html>

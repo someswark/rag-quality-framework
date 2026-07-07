@@ -1,7 +1,16 @@
 from core.framework_context import FrameworkContext
+
 from evaluators.evaluator_factory import EvaluatorFactory
+
 from datasets.dataset_loader import DatasetLoader
 
+from metrics.metric_engine import MetricEngine
+
+from data_generators.summary_json_generator import SummaryJsonGenerator
+from data_generators.evaluation_results_generator import EvaluationResultsGenerator
+
+from report_generators.executive_report_generator import ExecutiveReportGenerator
+from report_generators.detailed_report_generator import DetailedReportGenerator
 
 class EnterpriseAIQualityFramework:
 
@@ -12,6 +21,12 @@ class EnterpriseAIQualityFramework:
         self.config_loader = self.context.get_config_loader()
 
         self.evaluator = EvaluatorFactory.create(self.context)
+
+        self.metric_engine = MetricEngine()
+
+        self.summary_generator = SummaryJsonGenerator(self.context)
+
+        self.results_generator = EvaluationResultsGenerator(self.context)
         
         
     def run(self):
@@ -48,5 +63,39 @@ class EnterpriseAIQualityFramework:
         print()
         print(f"Dataset Loaded : {len(dataset)} Questions")
         print()
+        results = self.evaluator.evaluate(dataset)
 
-        self.evaluator.evaluate(dataset)
+        summary = self.metric_engine.calculate(results)
+
+        self.summary_generator.generate(summary)
+
+        self.results_generator.generate(results)
+
+        executive_report = ExecutiveReportGenerator(self.context)
+
+        executive_report.generate(summary)
+
+        detailed_report = DetailedReportGenerator(self.context)
+
+        detailed_report.generate(summary, results)
+
+        print()
+
+        print("=" * 60)
+
+        print("Evaluation Summary")
+
+        print("=" * 60)
+
+        print(f"Total Questions     : {summary.total_questions}")
+        print(f"PASS                : {summary.pass_count}")
+        print(f"REVIEW              : {summary.review_count}")
+        print(f"FAIL                : {summary.fail_count}")
+
+        print()
+
+        print(f"Overall Score       : {summary.overall_score}%")
+        print(f"Average Confidence  : {summary.average_confidence}%")
+        print(f"Average Latency     : {summary.average_latency} ms")
+        print(f"Quality Rating      : {summary.quality_rating}")
+                

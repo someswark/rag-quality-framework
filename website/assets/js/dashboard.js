@@ -1,179 +1,146 @@
-/*
-====================================================
-Dashboard Data Loader
-====================================================
-*/
+console.log("Dashboard Loaded");
 
-console.log("dashboard.js loaded");
+async function loadSummary() {
 
-document.addEventListener("DOMContentLoaded", loadDashboard);
+    const response = await fetch(
+        "assets/data/summary.json?t=" + new Date().getTime()
+    );
 
+    if (!response.ok) {
+        throw new Error("Unable to load summary.json");
+    }
 
+    return await response.json();
+}
 
+async function loadEvaluationResults() {
 
-async function loadDashboard() {
+    const response = await fetch(
+        "assets/data/evaluation_results.json?t=" + new Date().getTime()
+    );
+
+    if (!response.ok) {
+        throw new Error("Unable to load evaluation_results.json");
+    }
+
+    return await response.json();
+}
+
+function updateSummary(data) {
+
+    const evaluation = data.evaluation;
+
+    document.getElementById("overallScore").innerText =
+        evaluation.overall_score + "%";
+
+    document.getElementById("totalQuestions").innerText =
+        evaluation.total_questions;
+
+    document.getElementById("passCount").innerText =
+        evaluation.pass_count;
+
+    document.getElementById("reviewCount").innerText =
+        evaluation.review_count;
+
+    document.getElementById("failCount").innerText =
+        evaluation.fail_count;
+
+    document.getElementById("confidence").innerText =
+        evaluation.average_confidence + "%";
+
+    document.getElementById("latency").innerText =
+        evaluation.average_latency + " ms";
+}
+
+function updateEvaluationResults(results) {
+	
+	evaluationResults = results;
+
+    const tbody = document.getElementById("resultsBody");
+
+    tbody.innerHTML = "";
+
+    results.forEach((result, index) => {
+
+        const row = document.createElement("tr");
+
+row.innerHTML = `
+			<td>${index + 1}</td>
+			<td>${result.category}</td>
+			<td>${result.question}</td>
+			<td class="${result.status.toLowerCase()}">${result.status}</td>
+			<td>${result.confidence}%</td>
+			<td>${result.latency_ms} ms</td>
+
+			<td>
+				<button onclick="viewQuestion(${index})">
+					View
+				</button>
+			</td>
+`;	
+
+        tbody.appendChild(row);
+
+    });
+
+}
+
+document.addEventListener("DOMContentLoaded", async () => {
 
     try {
-		
-       // const response = await fetch(`assets/data/summary.json`);
-	   
-	    const response = await fetch(`fetch("../output/data/summary.json")`);
 
-        const data = await response.json();
+        const summary = await loadSummary();
 
-        console.log("JSON Loaded Successfully");
+        updateSummary(summary);
 
-        console.log(data);
-		console.log("Data Loaded Successfully");
+        const results = await loadEvaluationResults();
 
-        populateDashboard(data);
+        updateEvaluationResults(results);
+
+        console.log("Dashboard Updated Successfully");
 
     }
-    catch(error){
+    catch (error) {
 
         console.error(error);
 
     }
 
-}
+});
 
+let evaluationResults = [];
 
-function populateDashboard(data) {
+function viewQuestion(index){
 
-    // Evaluation Context
-	
-	
-    console.log("populateDashboard called");
+    const result = evaluationResults[index];
 
-    console.log(data.overall_quality.score);
+    document.getElementById("mCategory").textContent =
+        result.category;
 
-    document.getElementById("application-type").textContent =
-        data.application.type;
+    document.getElementById("mQuestion").textContent =
+        result.question;
 
-    document.getElementById("knowledge-source").textContent =
-        data.application.knowledge_source;
+    document.getElementById("mExpected").textContent =
+        result.expected_answer;
 
-    document.getElementById("framework-version").textContent =
-        data.framework.version;
+    document.getElementById("mGenerated").textContent =
+        result.generated_answer;
 
-    document.getElementById("evaluation-date").textContent =
-        data.framework.evaluation_date;
+    document.getElementById("mStatus").textContent =
+        result.status;
 
-    document.getElementById("model-provider").textContent =
-        data.application.model_provider;
+    document.getElementById("mConfidence").textContent =
+        result.confidence + "%";
 
-    // Overall Score
+    document.getElementById("mLatency").textContent =
+        result.latency_ms + " ms";
 
-    document.getElementById("quality-score").textContent =
-        data.overall_quality.score + "%";
-
-    document.getElementById("quality-rating").textContent =
-        data.overall_quality.rating;
-
-    // PASS REVIEW FAIL
-
-    document.getElementById("pass-count").textContent =
-        data.overall_quality.pass;
-
-    document.getElementById("review-count").textContent =
-        data.overall_quality.review;
-
-    document.getElementById("fail-count").textContent =
-        data.overall_quality.fail;
-		
-		
-		setMetric(
-    "accuracy",
-    data.metrics.accuracy
-);
-
-setMetric(
-    "grounding",
-    data.metrics.grounding
-);
-
-setMetric(
-    "completeness",
-    data.metrics.completeness
-);
-
-setMetric(
-    "safety",
-    data.metrics.safety
-);
-
-setMetric(
-    "hallucination",
-    data.metrics.hallucination
-);
-
-// Latest Evaluation
-
-document.getElementById("latest-question").textContent =
-    data.latest_evaluation.question;
-
-document.getElementById("latest-status").textContent =
-    data.latest_evaluation.status;
-
-document.getElementById("latest-confidence").textContent =
-    data.latest_evaluation.confidence + "%";
-	
-	
-	
-	
-setText("quality-score", data.overall_quality.score + "%");
-setText("latest-question", data.latest_evaluation.question);
-setText("latest-confidence", data.latest_evaluation.confidence + "%");
-setText(
-    "report-generated-date",
-    data.reports.executive_summary.generated_on
-);
-
-
-const reportLink = document.getElementById("report-link");
-
-if (reportLink) {
-
-    reportLink.href =
-        data.reports.executive_summary.path;
+    document.getElementById("questionModal").style.display = "block";
 
 }
 
+function closeModal(){
 
-}
-
-function setMetric(name, value){
-
-    document.getElementById(
-        name + "-score"
-    ).textContent = value + "%";
-
-    document.getElementById(
-        name + "-bar"
-    ).style.width = value + "%";
-
-}
-
-function setText(id, value){
-
-    const element = document.getElementById(id);
-
-    if(element){
-
-        element.textContent = value ?? "N/A";
-
-    }
-
-}
-
-function setWidth(id, value){
-
-    const element = document.getElementById(id);
-
-    if(element){
-
-        element.style.width = value + "%";
-
-    }
+    document.getElementById("questionModal").style.display = "none";
 
 }

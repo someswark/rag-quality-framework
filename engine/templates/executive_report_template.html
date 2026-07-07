@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Executive AI Quality Assessment Report</title>
+
+    <style>
+
+{{CSS}}
+
+    </style>
+
+</head>
+
+<body>
+
+
+
+
+<div class="container">
+
+    <!-- ====================================================== -->
+    <!-- Header -->
+    <!-- ====================================================== -->
+
+    <div class="header">
+
+        <div>
+
+            <h1>{{FRAMEWORK_NAME}}</h1>
+
+            <div class="subtitle">
+                Executive AI Quality Assessment Report
+            </div>
+
+        </div>
+
+        <div class="version">
+
+            Version {{FRAMEWORK_VERSION}}
+
+        </div>
+
+    </div>
+
+
+
+<div class="navbar">
+
+    <a href="../../dashboard.html">Dashboard</a>
+
+    <a href="executive-report.html">Executive Report</a>
+
+    <a href="detailed-report.html">Detailed Report</a>
+
+</div>
+
+
+    <!-- ====================================================== -->
+    <!-- Application Information -->
+    <!-- ====================================================== -->
+
+    <div class="section">
+
+        <h2>Application Information</h2>
+
+        <table>
+
+            <tr>
+                <td><strong>Application</strong></td>
+                <td>{{APPLICATION_NAME}}</td>
+            </tr>
+
+            <tr>
+                <td><strong>Execution Mode</strong></td>
+                <td>{{EXECUTION_MODE}}</td>
+            </tr>
+
+            <tr>
+                <td><strong>Evaluation Date</strong></td>
+                <td>{{GENERATED_DATE}}</td>
+            </tr>
+
+            <tr>
+                <td><strong>Questions Evaluated</strong></td>
+                <td>{{TOTAL_QUESTIONS}}</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+
+    <!-- ====================================================== -->
+    <!-- Hero Score -->
+    <!-- ====================================================== -->
+
+    <div class="score-card">
+
+        <div class="score-title">
+
+            AI QUALITY SCORE
+
+        </div>
+
+        <div class="score">
+
+            {{OVERALL_SCORE}}%
+
+        </div>
+
+        <div class="rating">
+
+            {{QUALITY_RATING}}
+
+        </div>
+
+    </div>
+
+
+    <!-- ====================================================== -->
+    <!-- KPI Cards -->
+    <!-- ====================================================== -->
+
+    <div class="kpi-container">
+
+        <div class="kpi">
+
+            <h3>PASS</h3>
+
+            <div class="kpi-value">
+
+                {{PASS_COUNT}}
+
+            </div>
+
+        </div>
+
+        <div class="kpi">
+
+            <h3>REVIEW</h3>
+
+            <div class="kpi-value">
+
+                {{REVIEW_COUNT}}
+
+            </div>
+
+        </div>
+
+        <div class="kpi">
+
+            <h3>FAIL</h3>
+
+            <div class="kpi-value">
+
+                {{FAIL_COUNT}}
+
+            </div>
+
+        </div>
+
+        <div class="kpi">
+
+            <h3>Confidence</h3>
+
+            <div class="kpi-value">
+
+                {{AVERAGE_CONFIDENCE}}%
+
+            </div>
+
+        </div>
+
+        <div class="kpi">
+
+            <h3>Latency</h3>
+
+            <div class="kpi-value">
+
+                {{AVERAGE_LATENCY}} ms
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ====================================================== -->
+    <!-- Executive Assessment -->
+    <!-- ====================================================== -->
+
+    <div class="section">
+
+        <h2>Executive Assessment</h2>
+
+        <p>
+
+            {{ASSESSMENT}}
+
+        </p>
+
+    </div>
+
+
+    <!-- ====================================================== -->
+    <!-- Evaluation Summary -->
+    <!-- ====================================================== -->
+
+    <div class="section">
+
+        <h2>Evaluation Summary</h2>
+
+        <table>
+
+            <tr>
+
+                <th>Metric</th>
+
+                <th>Value</th>
+
+            </tr>
+
+            <tr>
+
+                <td>Total Questions</td>
+
+                <td>{{TOTAL_QUESTIONS}}</td>
+
+            </tr>
+
+            <tr>
+
+                <td>PASS</td>
+
+                <td>{{PASS_COUNT}}</td>
+
+            </tr>
+
+            <tr>
+
+                <td>REVIEW</td>
+
+                <td>{{REVIEW_COUNT}}</td>
+
+            </tr>
+
+            <tr>
+
+                <td>FAIL</td>
+
+                <td>{{FAIL_COUNT}}</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Overall Score</td>
+
+                <td>{{OVERALL_SCORE}}%</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Average Confidence</td>
+
+                <td>{{AVERAGE_CONFIDENCE}}%</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Average Latency</td>
+
+                <td>{{AVERAGE_LATENCY}} ms</td>
+
+            </tr>
+
+        </table>
+
+    </div>
+
+
+    <!-- ====================================================== -->
+    <!-- Strengths -->
+    <!-- ====================================================== -->
+
+    <div class="section">
+
+        <h2>Strengths</h2>
+
+        <ul>
+
+            {{STRENGTHS}}
+
+        </ul>
+
+    </div>
+
+
+    <!-- ====================================================== -->
+    <!-- Improvement Opportunities -->
+    <!-- ====================================================== -->
+
+    <div class="section">
+
+        <h2>Improvement Opportunities</h2>
+
+        <ul>
+
+            {{IMPROVEMENTS}}
+
+        </ul>
+
+    </div>
+
+
+    <!-- ====================================================== -->
+    <!-- Recommendations -->
+    <!-- ====================================================== -->
+
+    <div class="section">
+
+        <h2>Recommendations</h2>
+
+        <ul>
+
+            {{RECOMMENDATIONS}}
+
+        </ul>
+
+    </div>
+
+
+    <!-- ====================================================== -->
+    <!-- Footer -->
+    <!-- ====================================================== -->
+
+    <div class="footer">
+
+        Generated by <strong>{{FRAMEWORK_NAME}}</strong>
+
+        <br><br>
+
+        Version {{FRAMEWORK_VERSION}}
+
+        <br><br>
+
+        Generated On : {{GENERATED_DATE}}
+
+    </div>
+
+</div>
+
+</body>
+
+</html>

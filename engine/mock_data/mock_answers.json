@@ -1,0 +1,8 @@
+{
+  "What is SnapMirror?": {
+    "generated_answer": "SnapMirror replicates data between NetApp storage systems.",
+    "confidence": 97,
+    "latency_ms": 412,
+    "status": "PASS"
+  }
+}
