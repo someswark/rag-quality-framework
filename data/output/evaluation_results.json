@@ -1,0 +1,252 @@
+[
+    {
+        "question_id": "1",
+        "category": "HR",
+        "question": "What is the company's leave policy?",
+        "expected_answer": "Employees are entitled to annual leave according to the company leave policy.",
+        "generated_answer": "Employees are entitled to annual leave according to the organization's leave policy.",
+        "confidence": 98,
+        "latency_ms": 410,
+        "status": "PASS"
+    },
+    {
+        "question_id": "2",
+        "category": "HR",
+        "question": "How can I apply for leave?",
+        "expected_answer": "Leave requests can be submitted through the employee self-service portal.",
+        "generated_answer": "Leave applications can be submitted through the employee self-service portal.",
+        "confidence": 96,
+        "latency_ms": 395,
+        "status": "PASS"
+    },
+    {
+        "question_id": "3",
+        "category": "HR",
+        "question": "Where can I find the employee handbook?",
+        "expected_answer": "The employee handbook is available on the company intranet.",
+        "generated_answer": "The employee handbook is available on the company intranet under HR Resources.",
+        "confidence": 92,
+        "latency_ms": 430,
+        "status": "PASS"
+    },
+    {
+        "question_id": "4",
+        "category": "HR",
+        "question": "What are the company working hours?",
+        "expected_answer": "Employees should follow the official working hours defined by the organization.",
+        "generated_answer": "Employees should follow the official working hours defined by the organization.",
+        "confidence": 95,
+        "latency_ms": 405,
+        "status": "PASS"
+    },
+    {
+        "question_id": "5",
+        "category": "HR",
+        "question": "How do I update my personal information?",
+        "expected_answer": "Personal information can be updated through the HR portal.",
+        "generated_answer": "Personal information can be updated through the HR portal.",
+        "confidence": 90,
+        "latency_ms": 420,
+        "status": "PASS"
+    },
+    {
+        "question_id": "6",
+        "category": "IT",
+        "question": "How do I reset my password?",
+        "expected_answer": "Passwords can be reset using the self-service password portal.",
+        "generated_answer": "Reset your password using the self-service password reset portal.",
+        "confidence": 99,
+        "latency_ms": 310,
+        "status": "PASS"
+    },
+    {
+        "question_id": "7",
+        "category": "IT",
+        "question": "How can I request a new laptop?",
+        "expected_answer": "Submit a request through the IT service management portal.",
+        "generated_answer": "Submit a request through the IT service management portal.",
+        "confidence": 95,
+        "latency_ms": 360,
+        "status": "PASS"
+    },
+    {
+        "question_id": "8",
+        "category": "IT",
+        "question": "How do I raise an IT support ticket?",
+        "expected_answer": "Create a ticket using the IT support portal.",
+        "generated_answer": "Create a support ticket using the IT helpdesk portal.",
+        "confidence": 94,
+        "latency_ms": 340,
+        "status": "PASS"
+    },
+    {
+        "question_id": "9",
+        "category": "IT",
+        "question": "How do I connect to the company VPN?",
+        "expected_answer": "Follow the VPN setup guide available on the IT knowledge portal.",
+        "generated_answer": "Follow the VPN setup instructions available in the IT knowledge base.",
+        "confidence": 86,
+        "latency_ms": 455,
+        "status": "REVIEW"
+    },
+    {
+        "question_id": "10",
+        "category": "IT",
+        "question": "How do I install approved software?",
+        "expected_answer": "Request software installation through the IT support process.",
+        "generated_answer": "Approved software can be requested through the IT support process.",
+        "confidence": 91,
+        "latency_ms": 400,
+        "status": "PASS"
+    },
+    {
+        "question_id": "11",
+        "category": "Security",
+        "question": "What should I do if I receive a phishing email?",
+        "expected_answer": "Report the email immediately and do not click suspicious links.",
+        "generated_answer": "Report the email immediately and do not click suspicious links.",
+        "confidence": 98,
+        "latency_ms": 330,
+        "status": "PASS"
+    },
+    {
+        "question_id": "12",
+        "category": "Security",
+        "question": "How should confidential information be handled?",
+        "expected_answer": "Confidential information should only be shared with authorized personnel.",
+        "generated_answer": "Share confidential information only with authorized personnel.",
+        "confidence": 93,
+        "latency_ms": 390,
+        "status": "PASS"
+    },
+    {
+        "question_id": "13",
+        "category": "Security",
+        "question": "What is Multi-Factor Authentication?",
+        "expected_answer": "MFA provides an additional layer of authentication using multiple verification methods.",
+        "generated_answer": "Multi-Factor Authentication adds an additional verification step during login.",
+        "confidence": 88,
+        "latency_ms": 410,
+        "status": "REVIEW"
+    },
+    {
+        "question_id": "14",
+        "category": "Security",
+        "question": "How do I report a security incident?",
+        "expected_answer": "Report incidents immediately to the Information Security team.",
+        "generated_answer": "Immediately report security incidents to the Information Security team.",
+        "confidence": 97,
+        "latency_ms": 350,
+        "status": "PASS"
+    },
+    {
+        "question_id": "15",
+        "category": "Security",
+        "question": "Why should I lock my computer when away?",
+        "expected_answer": "Locking your computer prevents unauthorized access.",
+        "generated_answer": "Locking your computer prevents unauthorized access.",
+        "confidence": 94,
+        "latency_ms": 320,
+        "status": "PASS"
+    },
+    {
+        "question_id": "16",
+        "category": "Finance",
+        "question": "How do I submit an expense claim?",
+        "expected_answer": "Expense claims should be submitted through the expense management system.",
+        "generated_answer": "Expense claims should be submitted through the expense management system.",
+        "confidence": 96,
+        "latency_ms": 430,
+        "status": "PASS"
+    },
+    {
+        "question_id": "17",
+        "category": "Finance",
+        "question": "Where can I download my salary slips?",
+        "expected_answer": "Salary slips are available in the employee payroll portal.",
+        "generated_answer": "Salary slips are available in the employee payroll portal.",
+        "confidence": 92,
+        "latency_ms": 380,
+        "status": "PASS"
+    },
+    {
+        "question_id": "18",
+        "category": "Finance",
+        "question": "How do I apply for travel reimbursement?",
+        "expected_answer": "Travel reimbursements should be submitted with supporting documents through the finance portal.",
+        "generated_answer": "Travel reimbursements should be submitted with the required supporting documents.",
+        "confidence": 84,
+        "latency_ms": 470,
+        "status": "REVIEW"
+    },
+    {
+        "question_id": "19",
+        "category": "Finance",
+        "question": "What is the company travel policy?",
+        "expected_answer": "The travel policy is available on the company intranet.",
+        "generated_answer": "Travel policies may vary depending on department requirements.",
+        "confidence": 66,
+        "latency_ms": 520,
+        "status": "FAIL"
+    },
+    {
+        "question_id": "20",
+        "category": "Finance",
+        "question": "How do I update my bank account details?",
+        "expected_answer": "Bank account information can be updated through the HR/payroll portal.",
+        "generated_answer": "Update your bank account information through the HR or payroll portal.",
+        "confidence": 91,
+        "latency_ms": 410,
+        "status": "PASS"
+    },
+    {
+        "question_id": "21",
+        "category": "General",
+        "question": "What is the company's code of conduct?",
+        "expected_answer": "The code of conduct defines expected professional and ethical behavior.",
+        "generated_answer": "The code of conduct defines expected professional and ethical behavior.",
+        "confidence": 95,
+        "latency_ms": 370,
+        "status": "PASS"
+    },
+    {
+        "question_id": "22",
+        "category": "General",
+        "question": "How do I contact the HR team?",
+        "expected_answer": "HR can be contacted through the employee support portal.",
+        "generated_answer": "The HR team can be contacted through the employee support portal.",
+        "confidence": 87,
+        "latency_ms": 400,
+        "status": "REVIEW"
+    },
+    {
+        "question_id": "23",
+        "category": "General",
+        "question": "Where can I find company policies?",
+        "expected_answer": "Company policies are available on the corporate intranet.",
+        "generated_answer": "Company policies are available on the corporate intranet.",
+        "confidence": 93,
+        "latency_ms": 360,
+        "status": "PASS"
+    },
+    {
+        "question_id": "24",
+        "category": "General",
+        "question": "How can I search the knowledge base?",
+        "expected_answer": "Use the enterprise search feature on the knowledge portal.",
+        "generated_answer": "Use the enterprise search feature available on the knowledge portal.",
+        "confidence": 89,
+        "latency_ms": 430,
+        "status": "REVIEW"
+    },
+    {
+        "question_id": "25",
+        "category": "General",
+        "question": "Who should I contact for general support?",
+        "expected_answer": "Contact the company helpdesk for general assistance.",
+        "generated_answer": "For general support, please refer to the FAQ section.",
+        "confidence": 61,
+        "latency_ms": 560,
+        "status": "FAIL"
+    }
+]

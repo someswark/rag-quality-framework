@@ -14,10 +14,16 @@ class DatasetLoader:
 
         dataset = []
 
+        project_root = Path(__file__).resolve().parents[2]
+
         dataset_path = (
-            Path(__file__).parent
+            project_root
+            / "data"
+            / "datasets"
             / "golden_dataset.csv"
         )
+
+        print(f"Loading Dataset : {dataset_path}")
 
         with open(
             dataset_path,
@@ -33,7 +39,7 @@ class DatasetLoader:
 
                     Question(
 
-                        question_id=row["id"],
+                        question_id=row["question_id"],
 
                         category=row["category"],
 
@@ -46,3 +52,4 @@ class DatasetLoader:
                 )
 
         return dataset
+        

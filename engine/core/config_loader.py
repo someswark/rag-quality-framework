@@ -38,3 +38,10 @@ class ConfigLoader:
 
     def get_output(self):
         return self.config.get("output", {})
+        
+    def get_answer_provider(self):
+
+        return self.config.get(
+        "answer_provider",
+        {}
+        )

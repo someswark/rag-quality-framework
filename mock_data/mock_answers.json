@@ -1,13 +1,31 @@
 {
-  "What is SnapMirror?": {
-    "answer": "SnapMirror replicates data between NetApp storage systems.",
-    "confidence": 96,
-    "latency": 450
+  "What is the company's leave policy?": {
+    "answer": "Employees are entitled to annual leave as per the organization's leave policy.",
+    "confidence": 98,
+    "latency": 410
   },
 
-  "What is MetroCluster?": {
-    "answer": "MetroCluster provides synchronous replication for disaster recovery.",
+  "How can I apply for leave?": {
+    "answer": "Leave requests can be submitted through the employee self-service portal.",
+    "confidence": 96,
+    "latency": 395
+  },
+
+  "Where can I find the employee handbook?": {
+    "answer": "The employee handbook is available on the company intranet under HR Resources.",
+    "confidence": 95,
+    "latency": 430
+  },
+
+  "How do I reset my password?": {
+    "answer": "You can reset your password using the organization's self-service password reset portal.",
+    "confidence": 97,
+    "latency": 385
+  },
+
+  "How do I request new hardware?": {
+    "answer": "Hardware requests can be submitted through the IT service management portal.",
     "confidence": 94,
-    "latency": 520
+    "latency": 445
   }
 }

@@ -1,0 +1,30 @@
+id,category,question,expected_answer
+1,HR,What is the company's leave policy?,Employees are entitled to annual leave according to the company leave policy.
+2,HR,How can I apply for leave?,Leave requests can be submitted through the employee self-service portal.
+3,HR,Where can I find the employee handbook?,The employee handbook is available on the company intranet.
+4,HR,What are the company working hours?,Employees should follow the official working hours defined by the organization.
+5,HR,How do I update my personal information?,Personal information can be updated through the HR portal.
+
+6,IT,How do I reset my password?,Passwords can be reset using the self-service password portal.
+7,IT,How can I request a new laptop?,Submit a request through the IT service management portal.
+8,IT,How do I raise an IT support ticket?,Create a ticket using the IT support portal.
+9,IT,How do I connect to the company VPN?,Follow the VPN setup guide available on the IT knowledge portal.
+10,IT,How do I install approved software?,Request software installation through the IT support process.
+
+11,Security,What should I do if I receive a phishing email?,Report the email immediately and do not click suspicious links.
+12,Security,How should confidential information be handled?,Confidential information should only be shared with authorized personnel.
+13,Security,What is Multi-Factor Authentication?,MFA provides an additional layer of authentication using multiple verification methods.
+14,Security,How do I report a security incident?,Report incidents immediately to the Information Security team.
+15,Security,Why should I lock my computer when away?,Locking your computer prevents unauthorized access.
+
+16,Finance,How do I submit an expense claim?,Expense claims should be submitted through the expense management system.
+17,Finance,Where can I download my salary slips?,Salary slips are available in the employee payroll portal.
+18,Finance,How do I apply for travel reimbursement?,Travel reimbursements should be submitted with supporting documents through the finance portal.
+19,Finance,What is the company travel policy?,The travel policy is available on the company intranet.
+20,Finance,How do I update my bank account details?,Bank account information can be updated through the HR/payroll portal.
+
+21,General,What is the company's code of conduct?,The code of conduct defines expected professional and ethical behavior.
+22,General,How do I contact the HR team?,HR can be contacted through the employee support portal.
+23,General,Where can I find company policies?,Company policies are available on the corporate intranet.
+24,General,How can I search the knowledge base?,Use the enterprise search feature on the knowledge portal.
+25,General,Who should I contact for general support?,Contact the company helpdesk for general assistance.

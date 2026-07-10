@@ -4,13 +4,13 @@
         "version": "2.0"
     },
     "evaluation": {
-        "total_questions": 25,
-        "pass_count": 18,
-        "review_count": 5,
-        "fail_count": 2,
-        "overall_score": 89.2,
-        "quality_rating": "Good",
-        "average_confidence": 90.4,
-        "average_latency": 402.2
+        "total_questions": 1,
+        "pass_count": 1,
+        "review_count": 0,
+        "fail_count": 0,
+        "overall_score": 100.0,
+        "quality_rating": "Excellent",
+        "average_confidence": 100.0,
+        "average_latency": 410.0
     }
 }

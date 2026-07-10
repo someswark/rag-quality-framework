@@ -96,6 +96,11 @@ document.addEventListener("DOMContentLoaded", async () => {
         const results = await loadEvaluationResults();
 
         updateEvaluationResults(results);
+		if (results.length > 0) {
+
+			updateSampleEvaluation(results[0]);
+
+		}
 
         console.log("Dashboard Updated Successfully");
 
@@ -142,5 +147,31 @@ function viewQuestion(index){
 function closeModal(){
 
     document.getElementById("questionModal").style.display = "none";
+
+}
+
+function updateLatestEvaluation(result) {
+
+    document.getElementById("latest-question").textContent =
+        result.question;
+
+    document.getElementById("latest-status").textContent =
+        result.status;
+
+    document.getElementById("latest-confidence").textContent =
+        result.confidence + "%";
+
+}
+
+function updateSampleEvaluation(result) {
+
+    document.getElementById("latest-question").textContent =
+        result.question;
+
+    document.getElementById("latest-status").textContent =
+        result.status;
+
+    document.getElementById("latest-confidence").textContent =
+        result.confidence + "%";
 
 }

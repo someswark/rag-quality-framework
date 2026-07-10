@@ -11,6 +11,7 @@ from data_generators.evaluation_results_generator import EvaluationResultsGenera
 
 from report_generators.executive_report_generator import ExecutiveReportGenerator
 from report_generators.detailed_report_generator import DetailedReportGenerator
+from knowledge_sources.knowledge_source_processor import KnowledgeSourceProcessor
 
 class EnterpriseAIQualityFramework:
 
@@ -56,6 +57,12 @@ class EnterpriseAIQualityFramework:
         # Load Dataset
         # -----------------------------
 
+        knowledge_processor = KnowledgeSourceProcessor(
+            self.context
+        )
+
+        knowledge_processor.process()
+        
         dataset_loader = DatasetLoader(self.context)
 
         dataset = dataset_loader.load()

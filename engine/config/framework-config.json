@@ -1,12 +1,13 @@
 {
   "framework": {
     "name": "Enterprise AI Quality Framework",
-    "version": "2.0"
+    "version": "2.1"
   },
 
-  "execution": {
+ "execution": {
     "mode": "mock",
     "profile": "demo"
+
   },
 
   "application": {
@@ -15,29 +16,52 @@
     "description": "Internal enterprise knowledge assistant"
   },
 
-  "knowledge_source": {
-    "name": "HR Knowledge Base",
-    "type": "PDF Documents"
-  },
+	"knowledge_source": {
+		"enabled": false
+	},
 
   "llm": {
-    "provider": "Google",
-    "model": "gemini-2.5-flash"
+
+    "provider": "Gemini",
+
+    "model": "gemini-2.5-flash",
+
+    "api_key": ""
+
   },
 
   "evaluation": {
+
     "dataset": "golden_dataset.csv",
+
     "metrics": [
+
       "accuracy",
+
       "grounding",
+
       "completeness",
+
       "safety",
+
       "hallucination"
+
     ]
+
+  },
+
+  "answer_provider": {
+
+    "provider": "mock"
+
   },
 
   "output": {
+
     "summary_json": "../website/assets/data/summary.json",
+
     "reports_folder": "../website/assets/reports"
+
   }
+
 }
